@@ -27,7 +27,7 @@ class Test_AppUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let text = app.staticTexts["Hello, world!"]
+        let text = app.staticTexts["Hello, world! DOES NOT EXIST"]
         XCTAssert(text.waitForExistence(timeout: 10))
 
         // Use recording to get started writing UI tests.
